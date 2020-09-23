@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <app-sectionCard/>
+    <app-tables/>  
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SectionCard from './sectioncard'
+import Tables from './tables'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'app-sectionCard': SectionCard, 'app-tables': Tables
   }
 }
 </script>
@@ -23,6 +24,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
 </style>
